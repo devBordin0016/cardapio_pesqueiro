@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesqueiro do Arnaldao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pesqueiro do Arnaldao</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Cardapio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre Nos</a>
+                    </li>
+                    <li>
+                        <a href="#">Em Destaque</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carousel-imagens">
+        <img src="./images/lago_r.jpg" alt="Lago">
+        <img src="./images/forno_lenha_r.jpg" alt="Forno a Lenha">
+        <img src="./images/aquario_r.jpg" alt="Aquario">
+    </div>
+
+    <section id="sobre-a-loja">
+        <div class="container container-flex ">
+            <img src="./images/pesqueiro_entrada.jpg" alt="Entrada Pesqueiro">
+            <div>
+                <h2>Sobre o Pesqueiro do Arnaldao</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui similique deserunt corrupti. Iusto, maiores tempora voluptatem molestiae saepe corporis et eligendi, tempore recusandae at non! Quisquam veniam voluptatem inventore non!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dicta aperiam quis, obcaecati modi illum ipsum, doloribus iusto libero suscipit saepe voluptas amet alias deleniti eligendi tenetur fuga, exercitationem quasi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus temporibus consequuntur reprehenderit et optio in consequatur voluptas quidem mollitia corporis, pariatur ipsa dicta, modi sunt. Nostrum assumenda culpa vitae aspernatur.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                autoplay: true,
+            });
+            $('.menu-hamburguer').click(function() {
+                $('nav').slideToggle();
+            })
+        })
+    </script>
+
+    <section>
+        <div class="container">
+            <h2>Cardapio</h2>
+            <ul class="container-flex lista-pratos">
+                <li>
+                    <img src="./images/Bacalhau.jpg" alt="Prato Bacalhau">
+                    <h3>Bacalhau G</h3>
+                    <p>Bacalhau para 4 pessoas, Salada, Arroz, Feijao, Batata Soute</p>
+                    <div class="price">
+                        <strong>230.00</strong>
+                    </div>
+                    <button type="button">Ver Detalhes</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/Bacalhau.jpg" alt="Prato Bacalhau">
+                    <h3>Bacalhau G</h3>
+                    <p>Bacalhau para 4 pessoas, Salada, Arroz, Feijao, Batata Soute</p>
+                    <div class="price">
+                        <strong>230.00</strong>
+                    </div>
+                    <button type="button">Ver Detalhes</button>
+                </li>
+                <li>
+                    <img src="./images/Bacalhau.jpg" alt="Prato Bacalhau">
+                    <h3>Bacalhau G</h3>
+                    <p>Bacalhau para 4 pessoas, Salada, Arroz, Feijao, Batata Soute</p>
+                    <div class="price">
+                        <strong>230.00</strong>
+                    </div>
+                    <button type="button">Ver Detalhes</button>
+                </li>
+                <li>
+                    <img src="./images/Bacalhau.jpg" alt="Prato Bacalhau">
+                    <h3>Bacalhau G</h3>
+                    <p>Bacalhau para 4 pessoas, Salada, Arroz, Feijao, Batata Soute</p>
+                    <div class="price">
+                        <strong>230.00</strong>
+                    </div>
+                    <button type="button">Ver Detalhes</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/Bacalhau.jpg" alt="Prato Bacalhau">
+                    <h3>Bacalhau G</h3>
+                    <p>Bacalhau para 4 pessoas, Salada, Arroz, Feijao, Batata Soute</p>
+                    <div class="price">
+                        <strong>230.00</strong>
+                    </div>
+                    <button type="button">Ver Detalhes</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
